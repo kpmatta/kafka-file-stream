@@ -2,7 +2,7 @@ class Log4j:
     def __init__(self, spark):
         log4j = spark._jvm.org.apache.log4j
 
-        root_class = "guru.learningjournal.spark.examples"
+        root_class = "com.krishnamatta.spark.examples"
         conf = spark.sparkContext.getConf()
         app_name = conf.get("spark.app.name")
 
